@@ -734,6 +734,15 @@ a.carousel-control-prev {
     transform: translateX(55%); } }
 
 @media screen and (max-width: 535px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    width: 100%; }
+  .secdropdwn {
+    width: 100%;
+    top: 0;
+    left: 20%; }
+    .secdropdwn li {
+      padding-left: 0;
+      margin-left: 0; }
   .d-md-block {
     top: 18%;
     font-size: 80%; }
@@ -744,6 +753,13 @@ a.carousel-control-prev {
   .roundedIcons .col-md-6 .iconDescr span {
     width: 70%;
     display: block; } }
+
+@media screen and (max-width: 431px) {
+  .footer .form .offForm label[for=box] {
+    padding-left: 13%;
+    margin-left: 5%; }
+  .roundedIcons .col-md-6 img {
+    width: 30%; } }
 
 @media screen and (max-width: 374px) {
   .footer .form .offForm label[for=box] {
@@ -775,7 +791,7 @@ a.carousel-control-prev {
   .footer .form .offForm label[for=box] {
     margin-left: 5%;
     font-size: 100%;
-    padding-left: 12%;
+    padding-left: 15%;
     width: 90%; }
   .footer .form .offForm input[type=submit] {
     margin-left: 13%;

@@ -1,0 +1,129 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin banner {
+  position: relative;
+  color: $offWhite;
+  .banner-content {
+    position: absolute;
+    top : 35%;
+    margin-left: 10%;
+    max-width: 40%;
+  }
+  img {
+    width: 100%;
+  }
+  span {
+    font-size: 20px;
+    display: block;
+    font-family: $usableFont;
+  }
+  span.hello_word {
+    font-weight: normal;
+    margin-bottom: 0;
+    font-size: 40px;
+    font-family: $usableFont;
+  }
+  input.learnMore {
+    background-color: $buttonColor;
+    font-family: $usableFont;
+    color: $offWhite;
+    border-radius: 2px;
+    border: 1px solid $buttonColor;
+    font-size: 15px;
+    width: auto;
+    height: 40px;
+    text-transform: uppercase;
+    &:hover {
+      background: lighten($buttonColor, 5);
+    }
+  }
+}
+
+@mixin tabletBanner {
+  position: relative;
+  color: $offWhite;
+  .banner-content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    top: 10%;
+  }
+}
+
+@mixin mobileBanner {
+  position: relative;
+  color: $offWhite;
+  .banner-content {
+    margin-left: 0;
+    padding-left: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    .wrapper {
+      width: 100%;
+      display: block;
+      span {
+        margin-left: 0;
+        width: 100%;
+        display: block;
+        text-align: center;
+      }
+      input {
+        margin-left: 37.5%;
+        width: auto;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+@mixin banner2 {
+  position: relative;
+  color: $offWhite;
+  .banner-content {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top : 35%;
+  }
+  img {
+    width: 100%;
+  }
+  span {
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: $usableFont;
+  }
+  span.hello_word {
+    font-weight: normal;
+    margin-bottom: 0;
+    font-size: 40px;
+    font-family: $usableFont;
+  }
+  input.learnMore {
+    background-color: $buttonColor;
+    font-family: $usableFont;
+    color: $offWhite;
+    border-radius: 2px;
+    border: 1px solid $buttonColor;
+    font-size: 15px;
+    width: auto;
+    height: 40px;
+    text-transform: uppercase;
+    &:hover {
+      background: lighten($buttonColor, 5);
+    }
+  }
+}

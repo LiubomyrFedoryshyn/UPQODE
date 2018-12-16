@@ -8,6 +8,10 @@ body, html {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .navbar-light .navbar-nav .nav-link {
     color: black;
     font-family: $usableFont;
